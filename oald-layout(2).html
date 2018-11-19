@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+	*{background-color: rgba(0,0,0,0.08);
+      
+	   }
+	html{height:100%;}
+	body{height:100%;
+		margin:0;}
+	header{height:200px;
+	       background-color: red;
+	       border-bottom: 2px black solid;
+	       box-sizing: border-box;}
+	div{height:100%;
+	    }
+    main{font-size: 0;
+         height: calc(100% - 200px);
+         }
+	main > *{display:inline-block;
+	         font-size: initial;
+             vertical-align: top;}
+              
+	aside{height:100%;
+		  width:200px;
+		  border-right: 2px black solid;
+	      background-color: blue;
+          box-sizing: border-box;}
+	      
+	section{height:100%;
+	        width: calc(100% - 200px);
+	        background-color: yellow;}
+
+
+	   
+	
+	</style>
+</head>
+<body>
+   <div>
+   	<header>
+   	header
+   </header>
+   <main>
+   	<aside>aside</aside>
+   	<section>section</section>
+   </main>
+   </div>
+   
+
+</body>
+</html>
