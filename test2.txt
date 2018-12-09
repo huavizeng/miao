@@ -1,0 +1,192 @@
+1.所有div h1标签
+  带有class属性且id名为abc的div标签
+  hover状态下的div标签的所有间接后代li里的div子元素
+  body里所有被选中（鼠标按下不松开）的元素
+  hover状态下的div标签的after伪元素
+  所有被鼠标选中的文本，用于color与background-color两个属性
+  ID名为链接地址#后面的部分的元素
+  紧挨着input与ul后面的p标签后的所有span元素
+2.（0，0，0，0）
+  （0，0，0，2）
+  （0，0，1，1）
+  （0，0，0，3）
+  （0，2，4，0）
+3.https://www.example.com/a/b/test.example.com/path/c.css
+4.取决于元素字体的大小
+  像素大小
+  取决于根元素的大小
+  视口宽度的百分之一
+  视口高度的百分之一
+5.1.65*1.65
+6.brown：200px
+  quick：24px
+  jumps：24px
+  dog，over：36px
+  lazy：54px
+  sucks：200px
+7.italic是专门设计的字体风格
+  obsolete只是对正常字体进行倾斜
+8.li:nth-child(n+9):nth-child(-n+6)
+  [class^=damiao-]
+  [rel~=nofollow]
+9.link-visited-hover-focus-active
+  元素在active时会同时触发前面的几种状态，若将active放在其他伪类前面，active的样式会被其他伪类样式覆盖掉，所以应该将其放在最后避免这种情况的发生。
+  同理可推其他伪类的顺序。
+10.第三个
+11.字母x的交叉点
+12.字母x的最下端
+13.每个元素都可以看成是盒子构成的，盒子由margin-box，padding-box，border-box以及content-box从外到内一个套一个构成。
+14.点击元素使其出现光标
+   使用outline：none属性去掉虚框
+15./*    */
+16.属性值错误，属性名错误，忘了加‘；’
+17.父元素没有高度时元素百分比无效。
+18.border-box与content-box(默认）。指定border-box时元素宽高都为border-box的宽高。content-box同理。
+19.<div>
+      <before></before>
+      <h1>The article</h1>
+      <p>the quick brown fox</p>
+      <after></after>
+    </div>
+20.在伪元素content中添加／A符号，并使用样式white-space: pre使其生效。
+
+22.doctype声明用于告诉浏览器该用什么规则来解读文档标记，若没有声明该规则浏览器可能将不能正确显示文档或者根本不能显示文档。
+
+23.content：140
+   cover：80
+
+24.
+
+25.a.flex布局：在父元素上设置justify-content + align-items即可；
+
+   b.利用table特性将父元素设置为table－cell实现水平垂直居中
+
+   c.利用绝对定位与transform平移属性实现水平垂直居中
+
+   d.利用相对定位 绝对定位与负margin实现水平垂直居中
+
+   e.
+
+26.em框：font size的值
+
+   内容区：非替换元素  各字符的em框构成
+     
+   替换元素  margin－box大小
+
+   行内框：非替换元素 行高
+     
+   替换元素无所谓
+
+   行框  一行中行内框最高点与最低点距离所形成的最小框
+
+27.加个字母x，x地端就是其baseline位置
+   使用vertical－align：top／bottom确定其最高点与最低点
+
+28.
+
+29.
+
+30.display：inline－block会使元素能够在一行中展示，且还能设置元素的宽高，可以把它想象成一张张图片，ta的行内框高度就是margin－box的高度，基线在图片底部，默认基线对齐。
+
+31.
+
+32.a。伪元素不能被hover
+ 
+   b。opacity属性不能设百分比
+
+   c。transition中opacity不支持step方式
+ 
+   d。a标签没有结束
+
+33.60px
+
+34.
+
+35.在文档中元素或从上到下，或从左到右依次排放即为常规流。
+
+   常规流中，元素最近块级祖先元素的内容区就是元素的包含块。
+
+36.
+
+37.
+
+38.利用扩散半径5px 0px 10px －5px ；只设置单方向阴影
+
+39.
+
+40.a。transition对visibility:hidden`，`display:none`无效，对opacity有效
+ 
+   b。display：none后元素不占据空间，其他两个占据
+
+41.
+
+42.这属于绝对单位，反映的是真实的物理尺寸，在电脑上不容易被精确的渲染。
+
+43.从上到下cells－rows－row groups－columns－column groups－table
+
+44.
+
+45.实心：利用border－radius使圆的半径为元素的高度且为宽度的一半／利用clip－path进行裁剪
+   
+   空心：加边框或阴影
+
+46.：checked／：default／：disabled／：empty／：enabled
+
+47.对testare应用样式style＝“resize：none“
+
+48.早期浏览器对css规范的支持与理解不一致，导致了许多兼容性问题，而css reset的作用就是清除一切浏览器默认样式，解决兼容性问题。css normalize是css reset的替代品，保护了有用的默认样式，避免做无用功。
+
+49.
+
+50.background-position:left 5px bottom 3px;
+   background-repeat:no-repeat;
+
+51.
+
+52.omit：
+   
+   multiple：多个
+  
+   驼峰式：
+ 
+   中划线式：
+ 
+   layout：布局
+ 
+   typo：
+ 
+   code：编码
+ 
+   review：回顾
+  
+   半径：radius
+ 
+   config：配置
+ 
+   集合：clump
+ 
+   矩形：rectangle
+ 
+   binary：二进制
+  
+   decimal：十进制
+ 
+   十六进制：hex
+ 
+   八进制：octal
+  
+   seo：搜索引擎优化
+  
+   html实体：html character entities
+ 
+   语义化：semantic
+ 
+   兼容性：compatibility
+  
+   quirk：
+ 
+   reference：参考
+ 
+   大小写敏感：case sensitivity
+
+   别名：alias
