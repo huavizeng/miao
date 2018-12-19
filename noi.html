@@ -142,3 +142,209 @@
 	var result=Math.pow(2,n)
 	console.log(result)
 </script>
+<script id="ch0104/01" type="">
+	var N=prompt("请输入整数N")	
+	if (N>0)
+		console.log("positive")
+	if (N==0) 
+		console.log("zero")
+	if (N<0) 
+		console.log("negative")
+</script>
+<script id="ch0104/02" type="">
+	var a=prompt("请输入浮点数a")
+	if (a>=0) 
+		console.log((a).toFixed(2))
+	else
+		console.log((-a).toFixed(2))
+</script>
+<script id="ch0104/03" type="">
+	var n=prompt("请输入一个大于0的正整数n")
+	if (n%2==0)
+		console.log("even")
+	else
+		console.log("odd")
+</script>
+<script id="ch0104/04" type="1">
+	
+</script>
+<script id="ch0104/05" type="">
+	var x=prompt("请输入整数x")
+	var y=prompt("请输入整数y")
+	if (x>y) 
+		console.log(">")
+	if (x==y) 
+		console.log("=")
+	if (x<y) 
+		console.log("<")
+</script>
+<script id="ch0104/06" type="">
+	var N=prompt("请输入正整数N")
+	if (N>=10&&N<=99) 
+		console.log("1")
+	else 
+		console.log("0")
+</script>
+<script id="ch0104/07" type="">
+	var x=prompt("请输入印有幸运的瓶盖数")
+	var y=prompt("请输入印有鼓励的瓶盖数")
+	if (x>=10||y>=20) 
+		console.log("1")
+	 else 
+	 	console.log("0")
+</script>	
+<script id="ch0104/08" type="">
+	var n=prompt("请输入一个数n")
+	if (n%3==0&&n%5==0) 
+		console.log("YES")
+	else
+		console.log("NO")
+</script>
+<script id="ch0104/09" type="">
+	var n=prompt("请输入一个整数n")
+	if (n%3==0&&n%5==0&&n%7==0) {
+	    	console.log("3 5 7")
+	    } else if (n%3==0&&n%5==0) {
+	        	console.log("3 5")
+	      }
+	      else if (n%3==0&&n%7==0) {
+	      	console.log("3 7")
+	      }
+	      else if (n%5==0&&n%7==0) {
+	      	console.log("5 7")
+	      }
+	      else if (n%3==0) {
+	      	console.log("3")
+	      }
+	      else if (n%5==0) {
+	      	console.log("5")
+	      }
+	      else if (n%7==0) {
+	      	console.log("7")
+	      }
+	      else
+	      	console.log("n")
+
+
+</script>
+<script id="ch0104/10" type="">
+	var a=prompt("请输入语文成绩")
+	var b=prompt("请输入数学成绩")
+	if (a>=60&b>=60) {
+		console.log("0")
+	}else if (a<=60&&b<=60) {
+		console.log("0")
+	}
+	else
+		console.log("1")
+
+</script>
+<script id="ch0104/11" type="">
+	var a=prompt("请输入邀请时间")
+	if (a==1||a==3||a==5) 
+		console.log("YES")
+	else
+		console.log("NO")
+</script>
+<script id="ch0104/12" type="">
+	var s=prompt("请输入行走的距离")
+	if ((s/3+27+23)<s/1.2) 
+		console.log("Bike")
+	if ((s/3+27+23)>s/1.2) 
+		console.log("Walk")
+	if ((s/3+27+23)==s/1.2) 
+		console.log("All")
+</script>
+<script id="ch0104/13" type="">
+	var x=prompt("请输入浮点数N")
+	var y
+	if (x>=0&&x<5){
+		y=-x+2.5
+		console.log(y.toFixed(3))
+	}else if (x>=5&&x<10){
+		y=2-1.5*(x-3)*(x-3)
+	    console.log(y.toFixed(3))
+	}else if(x>=10&&x<20) {
+		y=x/2-1.5
+	    console.log(y.toFixed(3))	
+	}
+
+</script>
+<script id="ch0104/14" type="">
+	var	x=prompt("请输入一个整数")
+    var m=prompt("请选择是否加急")
+    var money=(x>1000)?8+(Math.ceil((x-1000)/500))*4:8
+    if (m=="y") {
+    	money=money+5
+    	console.log(money)
+    }
+    else
+    	console.log(money)
+</script>
+<script id="ch0104/15" type="">
+	var x=+prompt("x")
+	var y=+prompt("y")
+	var z=+prompt("z")
+	console.log(Math.max(x,y,z))
+</script>
+<script id="ch0104/16" type="">
+	var x=+prompt("第一条边")
+	var y=+prompt("第二条边")
+	var z=+prompt("第三条边")
+	if (x+y>z&&x+z>y&&y+z>x) 
+		console.log("yes")
+	else
+		console.log("no")
+</script>
+<script id="ch0104/17" type="">
+	var a=prompt("请输入年份")
+	if (a%400==0||(a%4==0&&a/100!==0)) 
+		console.log("Y")
+	else 
+		console.log("N")
+</script>
+<script id="ch0104/18" type="">
+	var x=+prompt("请输入点的横坐标")
+	var y=+prompt("请输入点的纵坐标")
+	if ((x+y)>=-2&&(x+y)<=2) 
+		console.log("yes")
+	else
+		console.log("no")
+</script>
+<script id="ch0104/19" type="">
+	var a=+prompt("第一个参数")
+	var b=+prompt("第二个参数")
+	var c=+prompt("第三个参数")
+
+</script>
+<script id="ch0104/20" type="">
+	var a=+prompt("请输入第一个浮点数")
+	var b=+prompt("请输入第二个浮点数")
+	var c=+prompt("请输入第三个浮点数")
+	if (b*b > 4 * a * c) {
+		var x1= (-b + Math.sqrt(b*b-4*a*c))/(2*a)
+		var x2= (-b - Math.sqrt(b*b-4*a*c))/(2*a)
+		console.log(x1,x2)
+	}else if (b*b == 4 * a * c) {
+		var x=-b/(2*a)
+		console.log(x)
+	}else if (b*b < 4 * a * c) {
+		var x1real=((-b/(2*a))).toFixed(5)
+		var x1imag=(Math.sqrt(4*a*c-b*b)/(2*a)).toFixed(5)+"i"
+
+		console.log("x1="+x1real+"+"+x1imag)
+		var x2real=((-b/(2*a))).toFixed(5)
+		var x2imag=(Math.sqrt(4*a*c-b*b)/(2*a)).toFixed(5)+"i"
+
+		console.log("x2="+x2real+"-"+x2imag)
+
+	}
+
+</script>
+<script id="ch0104/21" type="">
+	var n=+prompt("请输入苹果个数")
+	var x=+prompt("请输入虫子吃掉一个苹果所用时长")
+	var y=+prompt("请输入当前食用时长")
+	var result=n-Math.ceil(y/x)
+	console.log(result)
+</script>
