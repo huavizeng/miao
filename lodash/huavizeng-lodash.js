@@ -25,7 +25,7 @@ var huavizeng = {
     } else if (typeof(value)=='number') {
       return ary.push(value)
     }
-  }
+  },
   reverse:function(array){
     var temp
     var len=array.length
@@ -36,7 +36,7 @@ var huavizeng = {
       array[i]=temp
     }
     return array
-  }
+  },
   
   flatten:function flatten(array){
     var result=[]
@@ -50,11 +50,11 @@ var huavizeng = {
       }
     })
     return result
-  }
+  },
 
   head:function head(array){
     return array==[]?undefined:array[0]
-  }
+  },
   indexof:function indexof(array,value,fromIndex=0){
     if (fromIndex<0) {
       fromIndex+=array.length
@@ -65,21 +65,21 @@ var huavizeng = {
       }
     }
     return -1
-  }
+  },
   initial:function initial(array){
     var len=array.length-1
     return array.split(0,len)
   }
   last:function last(array){
     return array[array.length-1]
-  }
+  },
 
   fill:function fill(array,value,start=0,end=array.length){
     for (var i = start; i < end; i++) {
       array[i]=value
     }
     return array
-  }
+  },
   pull:function pull(array,...value){
     for (var i = 0; i < array.length; i++) {
       if (value.indexOf(array[i])!==-1) {
