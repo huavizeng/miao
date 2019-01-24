@@ -1,4 +1,4 @@
-var huaxizeng = {
+var huavizeng = {
   chunk: function chunk(ary, size = 1) {
     var result = []
     for(var i = 0; i< ary.length; i++) {
@@ -36,5 +36,57 @@ var huaxizeng = {
       array[i]=temp
     }
     return array
-  }abcdefabcdef
+  }
+  
+  flatten:function flatten(array){
+    var result=[]
+    array.forEach(val=>{
+      if(Array.isArray(val)){
+        val.forEach(item=>{
+          result.push(item)
+        })
+      }else {
+        result.push(val)
+      }
+    })
+    return result
+  }
+
+  head:function head(array){
+    return array==[]?undefined:array[0]
+  }
+  indexof:function indexof(array,value,fromIndex=0){
+    if (fromIndex<0) {
+      fromIndex+=array.length
+    }
+    for (var i = fromIndex; i < array.length; i++) {
+      if (array[i]==value) {
+        return i
+      }
+    }
+    return -1
+  }
+  initial:function initial(array){
+    var len=array.length-1
+    return array.split(0,len)
+  }
+  last:function last(array){
+    return array[array.length-1]
+  }
+
+  fill:function fill(array,value,start=0,end=array.length){
+    for (var i = start; i < end; i++) {
+      array[i]=value
+    }
+    return array
+  }
+  pull:function pull(array,...value){
+    for (var i = 0; i < array.length; i++) {
+      if (value.indexOf(array[i])!==-1) {
+        array.splice(i,1)
+        i--
+      }
+    }
+    return array
+  }
 }
