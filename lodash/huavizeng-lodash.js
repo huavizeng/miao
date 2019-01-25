@@ -69,7 +69,7 @@ var huavizeng = {
   initial:function initial(array){
     var len=array.length-1
     return array.split(0,len)
-  }
+  },
   last:function last(array){
     return array[array.length-1]
   },
