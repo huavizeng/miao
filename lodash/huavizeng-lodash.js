@@ -1,7 +1,8 @@
 var huavizeng = {
+  //数组
   chunk: function chunk(ary, size = 1) {
     var result = []
-    for(var i = 0; i< ary.length; i++) {
+    for(var i = 0; i< ary.length; i+=size) {
       result.push(ary.slice(i, i + size))
     }
     return result
@@ -9,7 +10,7 @@ var huavizeng = {
   compact: function(ary) {
     var result = []
     for(var item of ary) {
-      if (item!=false) {
+      if (item) {
         result.push(item)
       }
     }
@@ -68,7 +69,7 @@ var huavizeng = {
   },
   initial:function initial(array){
     var len=array.length-1
-    return array.split(0,len)
+    return array.splice(len,1)
   },
   last:function last(array){
     return array[array.length-1]
